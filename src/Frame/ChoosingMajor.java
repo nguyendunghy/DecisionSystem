@@ -9,12 +9,12 @@ package Frame;
  *
  * @author NguyenVanDung
  */
-public class ChoosingSchool extends javax.swing.JFrame {
+public class ChoosingMajor extends javax.swing.JFrame {
 
     /**
      * Creates new form ChoosingSchool
      */
-    public ChoosingSchool() {
+    public ChoosingMajor() {
         initComponents();
     }
 
@@ -46,8 +46,6 @@ public class ChoosingSchool extends javax.swing.JFrame {
         jComboBox6 = new javax.swing.JComboBox();
         jLabel10 = new javax.swing.JLabel();
         jComboBox9 = new javax.swing.JComboBox();
-        jLabel3 = new javax.swing.JLabel();
-        jComboBox8 = new javax.swing.JComboBox();
         jPanel4 = new javax.swing.JPanel();
         jCheckBox2 = new javax.swing.JCheckBox();
         jLabel21 = new javax.swing.JLabel();
@@ -86,77 +84,70 @@ public class ChoosingSchool extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setLayout(new java.awt.GridLayout());
+        jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Chọn Trường");
+        jLabel1.setText("Chọn Ngành");
         jPanel1.add(jLabel1);
 
         jPanel2.setLayout(new java.awt.GridLayout(9, 2));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Điểm đâu vào năm ngoái");
+        jLabel4.setText("TB điểm năm ngoái");
         jPanel2.add(jLabel4);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox1);
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Điểm đầu vào năm kia");
+        jLabel5.setText("TB điểm năm kia");
         jPanel2.add(jLabel5);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox2);
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Điểm đầu vào 3 năm trước");
+        jLabel6.setText("TB điểm 3 năm trước");
         jPanel2.add(jLabel6);
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox3);
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Học phí");
+        jLabel7.setText("Thu nhập");
         jPanel2.add(jLabel7);
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox4);
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Học bổng");
+        jLabel9.setText("Khả năng thăng tiến");
         jPanel2.add(jLabel9);
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox5);
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Chi phí sinh hoat");
+        jLabel8.setText("Khả năng xin việc");
         jPanel2.add(jLabel8);
 
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox7);
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Nhóm ngành");
+        jLabel11.setText("Yêu cầu ngoại ngữ");
         jPanel2.add(jLabel11);
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox6);
 
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Chất lượng đầu ra");
+        jLabel10.setText("Phù hợp thể chất,tinh thần");
         jPanel2.add(jLabel10);
 
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox9);
-
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Xa nhà");
-        jPanel2.add(jLabel3);
-
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
-        jPanel2.add(jComboBox8);
 
         jPanel4.setLayout(new java.awt.GridLayout(2, 1));
 
@@ -181,56 +172,56 @@ public class ChoosingSchool extends javax.swing.JFrame {
         jPanel6.setLayout(new java.awt.GridLayout(8, 2));
 
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel22.setText("Bách Khoa Hà Nội");
+        jLabel22.setText("IT");
         jPanel6.add(jLabel22);
 
         jComboBox19.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox19);
 
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("Giao thông vận tải");
+        jLabel23.setText("Kĩ thuật vật liệu");
         jPanel6.add(jLabel23);
 
         jComboBox20.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox20);
 
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24.setText("Y Hà Nội");
+        jLabel24.setText("Y đa khoa");
         jPanel6.add(jLabel24);
 
         jComboBox21.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox21);
 
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel25.setText("Dược");
+        jLabel25.setText("Hóa dược");
         jPanel6.add(jLabel25);
 
         jComboBox22.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox22);
 
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("Học viện Báo chí và tuyên truyền");
+        jLabel26.setText("Đông phương học");
         jPanel6.add(jLabel26);
 
         jComboBox23.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox23);
 
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("Học viện An Ninh");
+        jLabel27.setText("Sư phạm văn");
         jPanel6.add(jLabel27);
 
         jComboBox24.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox24);
 
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel28.setText("Kinh Tế Quốc Dân");
+        jLabel28.setText("Tiếng anh thương mại");
         jPanel6.add(jLabel28);
 
         jComboBox25.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox25);
 
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel29.setText("Ngoại Thương");
+        jLabel29.setText("Sư phạm văn");
         jPanel6.add(jLabel29);
 
         jComboBox26.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
@@ -344,20 +335,21 @@ public class ChoosingSchool extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ChoosingSchool.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ChoosingMajor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ChoosingSchool.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ChoosingMajor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ChoosingSchool.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ChoosingMajor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ChoosingSchool.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ChoosingMajor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ChoosingSchool().setVisible(true);
+                new ChoosingMajor().setVisible(true);
             }
         });
     }
@@ -381,7 +373,6 @@ public class ChoosingSchool extends javax.swing.JFrame {
     private javax.swing.JComboBox jComboBox5;
     private javax.swing.JComboBox jComboBox6;
     private javax.swing.JComboBox jComboBox7;
-    private javax.swing.JComboBox jComboBox8;
     private javax.swing.JComboBox jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -398,7 +389,6 @@ public class ChoosingSchool extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
