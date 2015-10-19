@@ -9,12 +9,12 @@ package Frame;
  *
  * @author NguyenVanDung
  */
-public class ChoosingMajor extends javax.swing.JFrame {
+public class ChosenMajorChosenSchool extends javax.swing.JFrame {
 
     /**
      * Creates new form ChoosingSchool
      */
-    public ChoosingMajor() {
+    public ChosenMajorChosenSchool() {
         initComponents();
     }
 
@@ -30,6 +30,8 @@ public class ChoosingMajor extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jComboBox8 = new javax.swing.JComboBox();
         jLabel4 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox();
         jLabel5 = new javax.swing.JLabel();
@@ -79,69 +81,78 @@ public class ChoosingMajor extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Chọn Ngành");
+        jLabel1.setText("Ngành IT Trường Bách Khoa Hà Nội");
         jPanel1.add(jLabel1);
 
         jPanel2.setLayout(new java.awt.GridLayout(9, 2));
 
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Điểm đầu vào hiện tại");
+        jPanel2.add(jLabel3);
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
+        jPanel2.add(jComboBox8);
+
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("TB điểm năm ngoái");
+        jLabel4.setText("Điểm đâu vào năm ngoái");
         jPanel2.add(jLabel4);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox1);
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("TB điểm năm kia");
+        jLabel5.setText("Điểm đầu vào năm kia");
         jPanel2.add(jLabel5);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox2);
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("TB điểm 3 năm trước");
+        jLabel6.setText("Điểm đầu vào 3 năm trước");
         jPanel2.add(jLabel6);
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox3);
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Thu nhập");
+        jLabel7.setText("Phổ điểm");
         jPanel2.add(jLabel7);
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox4);
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Khả năng thăng tiến");
+        jLabel9.setText("Xu hướng rút nộp hồ sơ");
         jPanel2.add(jLabel9);
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox5);
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Khả năng xin việc");
+        jLabel8.setText("..........");
         jPanel2.add(jLabel8);
 
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox7);
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Yêu cầu ngoại ngữ");
+        jLabel11.setText("..........");
         jPanel2.add(jLabel11);
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
         jPanel2.add(jComboBox6);
 
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Phù hợp thể chất,tinh thần");
+        jLabel10.setText("..........");
         jPanel2.add(jLabel10);
 
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quyết định", "Cực kì quan trọng", "Rất quan trọng", "Quan trọng", "Không quan trọng lắm", "Không ảnh hưởng" }));
@@ -150,7 +161,7 @@ public class ChoosingMajor extends javax.swing.JFrame {
         jPanel4.setLayout(new java.awt.GridLayout(1, 1));
 
         jCheckBox2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jCheckBox2.setText("Mức độ quan trọng");
+        jCheckBox2.setText("Mức độ quan trọng (khách quan)");
         jPanel4.add(jCheckBox2);
 
         jPanel5.setLayout(new java.awt.GridLayout(1, 1));
@@ -162,56 +173,56 @@ public class ChoosingMajor extends javax.swing.JFrame {
         jPanel6.setLayout(new java.awt.GridLayout(8, 2));
 
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel22.setText("IT");
+        jLabel22.setText("Bách Khoa Hà Nội");
         jPanel6.add(jLabel22);
 
         jComboBox19.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox19);
 
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("Kĩ thuật vật liệu");
+        jLabel23.setText("Giao Thông Vận Tải");
         jPanel6.add(jLabel23);
 
         jComboBox20.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox20);
 
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24.setText("Y đa khoa");
+        jLabel24.setText("..........");
         jPanel6.add(jLabel24);
 
         jComboBox21.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox21);
 
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel25.setText("Hóa dược");
+        jLabel25.setText("..........");
         jPanel6.add(jLabel25);
 
         jComboBox22.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox22);
 
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("Đông phương học");
+        jLabel26.setText("..........");
         jPanel6.add(jLabel26);
 
         jComboBox23.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox23);
 
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("Sư phạm văn");
+        jLabel27.setText("..........");
         jPanel6.add(jLabel27);
 
         jComboBox24.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox24);
 
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel28.setText("Tiếng anh thương mại");
+        jLabel28.setText("..........");
         jPanel6.add(jLabel28);
 
         jComboBox25.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
         jPanel6.add(jComboBox25);
 
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel29.setText("Sư phạm văn");
+        jLabel29.setText("..........");
         jPanel6.add(jLabel29);
 
         jComboBox26.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rất rất thích", "Rất thích", "Thích", "Không thích lắm", "Không thích", "Ghét" }));
@@ -262,6 +273,13 @@ public class ChoosingMajor extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu4.setText("Xu hướng");
+
+        jMenuItem5.setText("Xu hướng");
+        jMenu4.add(jMenuItem5);
+
+        jMenuBar1.add(jMenu4);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -289,8 +307,8 @@ public class ChoosingMajor extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -325,21 +343,51 @@ public class ChoosingMajor extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ChoosingMajor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ChosenMajorChosenSchool.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ChoosingMajor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ChosenMajorChosenSchool.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ChoosingMajor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ChosenMajorChosenSchool.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ChoosingMajor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ChosenMajorChosenSchool.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ChoosingMajor().setVisible(true);
+                new ChosenMajorChosenSchool().setVisible(true);
             }
         });
     }
@@ -363,6 +411,7 @@ public class ChoosingMajor extends javax.swing.JFrame {
     private javax.swing.JComboBox jComboBox5;
     private javax.swing.JComboBox jComboBox6;
     private javax.swing.JComboBox jComboBox7;
+    private javax.swing.JComboBox jComboBox8;
     private javax.swing.JComboBox jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -377,6 +426,7 @@ public class ChoosingMajor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -384,10 +434,12 @@ public class ChoosingMajor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
