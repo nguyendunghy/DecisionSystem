@@ -34,20 +34,29 @@ public class Topsis {
             this.row = row;
             this.column = column;
             this.table = Arrays.copyOfRange(table, 0, row * column);
-
         }
     }
 
-    public static void main(String[] args) {
-        float[] input = new float[]{(float) 0.1314, (float) 0.0711, (float) 0.0925, (float) 0.0564, (float) 0.0346, (float) 0.1124, (float) 0.0894, (float) 0.0719, (float) 0.0484, (float) 0.0865, (float) 0.1143, (float) 0.0826, (float) 0.0822, (float) 0.0645, (float) 0.0605, (float) 0.1181, (float) 0.0871, (float) 0.0719, (float) 0.0806, (float) 0.0519, (float) 0.1333, (float) 0.0642, (float) 0.1027, (float) 0.0323, (float) 0.0519, (float) 0.1238, (float) 0.0917, (float) 0.0616, (float) 0.0726, (float) 0.0692};
-        Topsis top = new Topsis(6, 5, input);
-        // System.out.println(String.valueOf(top.getChosenRow()));
-
-        int[] rs = top.getResultRow();
-        for (int i = 0; i < top.row; i++) {
-            System.out.print(rs[i] + " ");
+    public float[][] exchange(float[] table, int row, int column) {
+        float[][] output = new float[row][column];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                output[i][j] = table[i*column + j];
+            }
         }
+        return output;
     }
+
+//    public static void main(String[] args) {
+//        float[] input = new float[]{(float) 0.1314, (float) 0.0711, (float) 0.0925, (float) 0.0564, (float) 0.0346, (float) 0.1124, (float) 0.0894, (float) 0.0719, (float) 0.0484, (float) 0.0865, (float) 0.1143, (float) 0.0826, (float) 0.0822, (float) 0.0645, (float) 0.0605, (float) 0.1181, (float) 0.0871, (float) 0.0719, (float) 0.0806, (float) 0.0519, (float) 0.1333, (float) 0.0642, (float) 0.1027, (float) 0.0323, (float) 0.0519, (float) 0.1238, (float) 0.0917, (float) 0.0616, (float) 0.0726, (float) 0.0692};
+//        Topsis top = new Topsis(6, 5, input);
+//        // System.out.println(String.valueOf(top.getChosenRow()));
+//
+//        int[] rs = top.getResultRow();
+//        for (int i = 0; i < top.row; i++) {
+//            System.out.print(rs[i] + " ");
+//        }
+//    }
 
     //Tính các khoảng cách từ các dòng đến các giá trị lí tưởng
     private void calculateDistance() {
